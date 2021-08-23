@@ -34,6 +34,12 @@ public class TestRestController {
         villageInfo.setStreetName("Street name is:"+village.getStreetName());
         return villageInfo;
 
-
+        }
+    @GetMapping("/myName")
+    public String getMyName()
+    {
+        return "Ravi";
     }
+
+
 }
